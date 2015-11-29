@@ -143,7 +143,7 @@
 
                     <div class="post-meta">
                         Post on<span class="fa fa-clock-o"></span>
-                        <time datetime="2015-11-29T15:15:57.804Z"
+                        <time datetime="2015-11-29T15:24:25.312Z"
                               itemprop="datePublished">2015-11-29</time>
                     </div>
     </span>
@@ -170,11 +170,8 @@
 <h4 id="将Hexo站点部署到Github_Pages"><strong>将Hexo站点部署到Github Pages</strong></h4><ul>
 <li>打开git shell并cd到blog目录</li>
 <li>安装hexo-deployer-git<br><code>$ npm install hexo-deployer-git --save</code></li>
-<li><p>配置_config.yml文件</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">    <span class="attribute">type</span>: git</span><br><span class="line">    <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/username/username.github.io.git</span></span><br><span class="line">    <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署站点到Github Pages<br><code>$ hexo deploy</code><br>现在用浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>就可以看到刚才部署的站点了。</p>
-</li>
+<li>配置_config.yml文件<br><code>deploy:</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>type: git</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>repo: https://github.com/username/username.github.io.git</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>branch: master</code></li>
+<li>部署站点到Github Pages<br><code>$ hexo deploy</code><br>现在用浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>就可以看到刚才部署的站点了。</li>
 </ul>
 
         </section>
