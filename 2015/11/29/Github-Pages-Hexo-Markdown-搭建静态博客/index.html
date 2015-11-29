@@ -143,7 +143,7 @@
 
                     <div class="post-meta">
                         Post on<span class="fa fa-clock-o"></span>
-                        <time datetime="2015-11-29T13:20:24.000Z"
+                        <time datetime="2015-11-29T15:15:57.804Z"
                               itemprop="datePublished">2015-11-29</time>
                     </div>
     </span>
@@ -156,48 +156,26 @@
 </ul>
 <h2 id="基于Github_Pages和Hexo搭建静态博客"><strong>基于Github Pages和Hexo搭建静态博客</strong></h2><h4 id="利用Github_Pages搭建静态博客的步骤"><strong>利用Github Pages搭建静态博客的步骤</strong></h4><ul>
 <li>在github创建一个仓库，命名为：<em>username.github.io</em>，其中<em>username</em>为<em>github</em>账号的用户名</li>
-<li><p>打开git shell ，将刚才创建的仓库clone到本地</p>
-  <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/username/username.github.io</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入仓库目录，创建index.html</p>
-  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~ $ cd username<span class="class">.github</span><span class="class">.io</span></span><br><span class="line">~ $ echo <span class="string">"Hello World"</span> &gt; index.html</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将修改push到远端</p>
-  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">~ $ git add <span class="comment">--all</span></span><br><span class="line">~ $ git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"Initial commit"</span></span><br><span class="line">~ $ git push -u origin <span class="keyword">master</span></span></span><br></pre></td></tr></table></figure>
-</li>
+<li>打开git shell ，将刚才创建的仓库clone到本地<br><code>~ $ git clone https://github.com/username/username.github.io</code></li>
+<li>进入仓库目录，创建index.html<br><code>~ $ cd username.github.io</code><br><code>~ $ echo &quot;Hello World&quot; &gt; index.html</code></li>
+<li>将修改push到远端<br><code>~ $ git add --all</code><br><code>~ $ git commit -m &quot;Initial commit&quot;</code><br><code>~ $ git push -u origin master</code><br>现在，在浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>，就可以看到Hello World页面了</li>
 </ul>
-<p>现在，在浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>，就可以看到Hello World页面了</p>
 <h4 id="Hexo_的安装与使用"><strong>Hexo 的安装与使用</strong></h4><ul>
-<li><p>Hexo是一款基于Node.js的静态博客框架，要使用Hexo，首先需要安装Node.js。 Node.js的安装很简单，见Google或者百度或者Node.js官网。安装好Node.js后，就可以安装Hexo了：</p>
-  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-cli -<span class="keyword">g</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>现在，创建一个博客：</p>
-  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init blog</span><br><span class="line"><span class="variable">$ </span>cd blog</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加一篇文章：</p>
-  <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="string">"Hello Hexo"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>生成静态网页文件：</p>
-  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo generate</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动本地server:</p>
-  <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>Hexo是一款基于Node.js的静态博客框架，要使用Hexo，首先需要安装Node.js。 Node.js的安装很简单，见Google或者百度或者Node.js官网。安装好Node.js后，就可以安装Hexo了：<br><code>$ npm install hexo-cli -g</code></li>
+<li>现在，创建一个博客：<br><code>$ hexo init blog</code><br><code>$ cd blog</code><br><code>$ npm install</code></li>
+<li>添加一篇文章：<br><code>$ hexo new &quot;Hello Hexo&quot;</code></li>
+<li>生成静态网页文件：<br><code>$ hexo generate</code></li>
+<li>启动本地server:<br><code>$ hexo server</code><br>现在用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external"><em>http://localhost:4000</em></a>,就可以看到我们刚才创建好的博客，博客中有两篇文章，分别为<em>Hello World</em>（Hexo默认创建的）和<em>Helo Hexo</em>（我们刚创建的，因为没有添加任何内容，所以为空，可通过<strong>小书匠</strong>来编辑我们的文章，然后生成静态文件，最后部署）。</li>
 </ul>
-<p>现在用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external"><em>http://localhost:4000</em></a>,就可以看到我们刚才创建好的博客，博客中有两篇文章，分别为<em>Hello World</em>（Hexo默认创建的）和<em>Helo Hexo</em>（我们刚创建的，因为没有添加任何内容，所以为空，可通过<strong>小书匠</strong>来编辑我们的文章，然后生成静态文件，最后部署）。</p>
 <h4 id="将Hexo站点部署到Github_Pages"><strong>将Hexo站点部署到Github Pages</strong></h4><ul>
 <li>打开git shell并cd到blog目录</li>
-<li><p>安装hexo-deployer-git</p>
-  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
-</li>
+<li>安装hexo-deployer-git<br><code>$ npm install hexo-deployer-git --save</code></li>
 <li><p>配置_config.yml文件</p>
-  <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">    <span class="attribute">type</span>: git</span><br><span class="line">    <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/username/username.github.io.git</span></span><br><span class="line">    <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">    <span class="attribute">type</span>: git</span><br><span class="line">    <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/username/username.github.io.git</span></span><br><span class="line">    <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>部署站点到Github Pages</p>
-  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo deploy</span><br></pre></td></tr></table></figure>
+<li><p>部署站点到Github Pages<br><code>$ hexo deploy</code><br>现在用浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>就可以看到刚才部署的站点了。</p>
 </li>
 </ul>
-<p>现在用浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>就可以看到刚才部署的站点了。</p>
 
         </section>
         <hr/>
