@@ -149,15 +149,12 @@
     </span>
 
         <section class="post-content">
-            <h2 id="关于Markdown"><strong>关于Markdown</strong></h2><hr>
-<ul>
+            <h2 id="关于Markdown"><strong>关于Markdown</strong></h2><ul>
 <li>Markdown 是一种轻量级的「标记语言」，被越来越多的写作爱好者，撰稿者广泛使用。Markdown的语法十分简单，常用的标记符号不超过十个。</li>
 <li>工具推荐：<strong>小书匠</strong>。</li>
-<li>关于Markdown的语法，<strong>小书匠</strong>安装好以后，会有介绍文档。<h2 id="基于Github_Pages和Hexo搭建静态博客"><strong>基于Github Pages和Hexo搭建静态博客</strong></h2></li>
+<li>关于Markdown的语法，<strong>小书匠</strong>安装好以后，会有介绍文档。</li>
 </ul>
-<hr>
-<h4 id="利用Github_Pages搭建静态博客的步骤"><strong>利用Github Pages搭建静态博客的步骤</strong></h4><hr>
-<ul>
+<h2 id="基于Github_Pages和Hexo搭建静态博客"><strong>基于Github Pages和Hexo搭建静态博客</strong></h2><h4 id="利用Github_Pages搭建静态博客的步骤"><strong>利用Github Pages搭建静态博客的步骤</strong></h4><ul>
 <li>在github创建一个仓库，命名为：<em>username.github.io</em>，其中<em>username</em>为<em>github</em>账号的用户名</li>
 <li><p>打开git shell ，将刚才创建的仓库clone到本地</p>
   <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~ $ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/username/username.github.io</span><br></pre></td></tr></table></figure>
@@ -170,8 +167,7 @@
 </li>
 </ul>
 <p>现在，在浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>，就可以看到Hello World页面了</p>
-<h4 id="Hexo_的安装与使用"><strong>Hexo 的安装与使用</strong></h4><hr>
-<ul>
+<h4 id="Hexo_的安装与使用"><strong>Hexo 的安装与使用</strong></h4><ul>
 <li><p>Hexo是一款基于Node.js的静态博客框架，要使用Hexo，首先需要安装Node.js。 Node.js的安装很简单，见Google或者百度或者Node.js官网。安装好Node.js后，就可以安装Hexo了：</p>
   <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-cli -<span class="keyword">g</span></span></span><br></pre></td></tr></table></figure>
 </li>
@@ -189,8 +185,7 @@
 </li>
 </ul>
 <p>现在用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external"><em>http://localhost:4000</em></a>,就可以看到我们刚才创建好的博客，博客中有两篇文章，分别为<em>Hello World</em>（Hexo默认创建的）和<em>Helo Hexo</em>（我们刚创建的，因为没有添加任何内容，所以为空，可通过<strong>小书匠</strong>来编辑我们的文章，然后生成静态文件，最后部署）。</p>
-<h4 id="将Hexo站点部署到Github_Pages"><strong>将Hexo站点部署到Github Pages</strong></h4><hr>
-<ul>
+<h4 id="将Hexo站点部署到Github_Pages"><strong>将Hexo站点部署到Github Pages</strong></h4><ul>
 <li>打开git shell并cd到blog目录</li>
 <li><p>安装hexo-deployer-git</p>
   <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
