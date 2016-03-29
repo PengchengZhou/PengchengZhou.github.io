@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Github Pages + Hexo + Markdown 搭建静态博客 | Pengcheng Zhou&#39;s Blog</title>
+  <title>Archives: 2016 | Pengcheng Zhou&#39;s Blog</title>
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -43,7 +43,11 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2015/11/29/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
+                                    <a href="/2016/03/29/nagios监控远程linux主机/">nagios监控远程linux主机</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/01/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
                                 </li>
                                 
                                 </div>
@@ -96,7 +100,9 @@
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
                 
-                    <a  data-pjax href="/2015/11/29/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
+                    <a  data-pjax href="/2016/03/29/nagios监控远程linux主机/">nagios监控远程linux主机</a>
+                
+                    <a  data-pjax href="/2015/12/01/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
                 
                 
                 
@@ -110,7 +116,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">Github Pages + Hexo + Markdown 搭建静态博客</a></li>
+                        <li id="navbar-title"><a href="#">undefined</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -129,68 +135,45 @@
 
 
 <!-- -->
-<!--<body class="post-template">-->
+<!--<body class="home-template">-->
 <!---->
   
-
 <main class="content" role="main">
-    <article class="post" >
-    <span class="post-meta">
-                  <div class="tag-tile">
-                      
-                  </div>
-                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Github Pages + Hexo + Markdown 搭建静态博客</h1>
 
-                    <div class="post-meta">
-                        Post on<span class="fa fa-clock-o"></span>
-                        <time datetime="2015-11-29T15:24:25.312Z"
-                              itemprop="datePublished">2015-11-29</time>
-                    </div>
-    </span>
+    
+    <article class="post">
 
-        <section class="post-content">
-            <h2 id="关于Markdown"><strong>关于Markdown</strong></h2><ul>
-<li>Markdown 是一种轻量级的「标记语言」，被越来越多的写作爱好者，撰稿者广泛使用。Markdown的语法十分简单，常用的标记符号不超过十个。</li>
-<li>工具推荐：<strong>小书匠</strong>。</li>
-<li>关于Markdown的语法，<strong>小书匠</strong>安装好以后，会有介绍文档。</li>
-</ul>
-<h2 id="基于Github_Pages和Hexo搭建静态博客"><strong>基于Github Pages和Hexo搭建静态博客</strong></h2><h4 id="利用Github_Pages搭建静态博客的步骤"><strong>利用Github Pages搭建静态博客的步骤</strong></h4><ul>
-<li>在github创建一个仓库，命名为：<em>username.github.io</em>，其中<em>username</em>为<em>github</em>账号的用户名</li>
-<li>打开git shell ，将刚才创建的仓库clone到本地<br><code>~ $ git clone https://github.com/username/username.github.io</code></li>
-<li>进入仓库目录，创建index.html<br><code>~ $ cd username.github.io</code><br><code>~ $ echo &quot;Hello World&quot; &gt; index.html</code></li>
-<li>将修改push到远端<br><code>~ $ git add --all</code><br><code>~ $ git commit -m &quot;Initial commit&quot;</code><br><code>~ $ git push -u origin master</code><br>现在，在浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>，就可以看到Hello World页面了</li>
-</ul>
-<h4 id="Hexo_的安装与使用"><strong>Hexo 的安装与使用</strong></h4><ul>
-<li>Hexo是一款基于Node.js的静态博客框架，要使用Hexo，首先需要安装Node.js。 Node.js的安装很简单，见Google或者百度或者Node.js官网。安装好Node.js后，就可以安装Hexo了：<br><code>$ npm install hexo-cli -g</code></li>
-<li>现在，创建一个博客：<br><code>$ hexo init blog</code><br><code>$ cd blog</code><br><code>$ npm install</code></li>
-<li>添加一篇文章：<br><code>$ hexo new &quot;Hello Hexo&quot;</code></li>
-<li>生成静态网页文件：<br><code>$ hexo generate</code></li>
-<li>启动本地server:<br><code>$ hexo server</code><br>现在用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external"><em>http://localhost:4000</em></a>,就可以看到我们刚才创建好的博客，博客中有两篇文章，分别为<em>Hello World</em>（Hexo默认创建的）和<em>Helo Hexo</em>（我们刚创建的，因为没有添加任何内容，所以为空，可通过<strong>小书匠</strong>来编辑我们的文章，然后生成静态文件，最后部署）。</li>
-</ul>
-<h4 id="将Hexo站点部署到Github_Pages"><strong>将Hexo站点部署到Github Pages</strong></h4><ul>
-<li>打开git shell并cd到blog目录</li>
-<li>安装hexo-deployer-git<br><code>$ npm install hexo-deployer-git --save</code></li>
-<li>配置_config.yml文件<br><code>deploy:</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>type: git</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>repo: https://github.com/username/username.github.io.git</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>branch: master</code></li>
-<li>部署站点到Github Pages<br><code>$ hexo deploy</code><br>现在用浏览器访问<em><a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a></em>就可以看到刚才部署的站点了。</li>
-</ul>
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2016/03/29/nagios监控远程linux主机/">nagios监控远程linux主机</a>
+            </h1>
 
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2016-03-29T14:44:19.331Z"
+                      itemprop="datePublished">2016-03-29</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                一、在被监控主机安装NRPEsudo apt-get install nagios-nrpe-server nagios-plugins
+二、在监控主机安装nagios-server安装依赖
+sudo apt-get install apache2sudo apt-get install libapache2-mod-php5sudo apt-get install build-essentialsudo apt-get install
+                
+            </p>
+            
         </section>
-        <hr/>
-        <nav class="pagination" style="width:auto" role="pagination">
-            
-            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
-            
-            <a class="share-button" data-original-title title>Share this Post</a>
-            
-        </nav>
-        <br/>
-        <br/>
-        <section id="comment">
-            <div id="comment-box"></div>
-        </section>
-
-
     </article>
+    
+    <nav class="pagination" role="pagination">
+        
+        <span class="page-number">Page 1 of 1</span>
+        
+    </nav>
 </main>
 
 

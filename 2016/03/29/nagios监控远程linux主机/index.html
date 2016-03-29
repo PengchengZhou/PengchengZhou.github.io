@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>nagios监控远程linux主机 | Pengcheng Zhou&#39;s Blog</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Pengcheng Zhou's Blog">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/03/29/nagios监控远程linux主机/">nagios监控远程linux主机</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/01/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/03/29/nagios监控远程linux主机/">nagios监控远程linux主机</a>
+                
+                    <a  data-pjax href="/2015/12/01/Github-Pages-Hexo-Markdown-搭建静态博客/">Github Pages + Hexo + Markdown 搭建静态博客</a>
+                
+                
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Pengcheng Zhou&#39;s Blog</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">nagios监控远程linux主机</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">nagios监控远程linux主机</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2016-03-29T14:44:19.331Z"
+                              itemprop="datePublished">2016-03-29</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h2 id="一、在被监控主机安装NRPE">一、在被监控主机安装NRPE</h2><p>sudo apt-get install nagios-nrpe-server nagios-plugins</p>
+<h2 id="二、在监控主机安装nagios-server">二、在监控主机安装nagios-server</h2><p><strong>安装依赖</strong></p>
+<p>sudo apt-get install apache2<br>sudo apt-get install libapache2-mod-php5<br>sudo apt-get install build-essential<br>sudo apt-get install libgd2-xpm-dev</p>
+<p><strong>创建nagios用户</strong></p>
+<p>sudo -s</p>
+<p>/usr/sbin/useradd -m -s /bin/bash nagios<br>passwd nagios</p>
+<p>/usr/sbin/groupadd nagios<br>/usr/sbin/usermod -G nagios nagios</p>
+<p>/usr/sbin/groupadd nagcmd<br>/usr/sbin/usermod -a -G nagcmd nagios<br>/usr/sbin/usermod -a -G nagcmd www-data</p>
+<p><strong>安装nagios以及nagios-plugins</strong></p>
+<p>sudo apt-get install nagios3 nagios-plugins</p>
+<p><strong>启动apache2以及nagios3</strong></p>
+<p>service apache2 start<br>service nagios3 start</p>
+<p>访问<a href="http://localhost/nagios3，输入用户名密码（在安装nagios的过程中创建）即可进入nagios的监控界面。" target="_blank" rel="external">http://localhost/nagios3，输入用户名密码（在安装nagios的过程中创建）即可进入nagios的监控界面。</a></p>
+<h2 id="三、nagios_server端配置">三、nagios server端配置</h2><p>nagios的配置文件位于/etc/nagios3/目录下，其中nagios.cfg为主配置文件，commands.cfg用于配置命令，/etc/nagios3/conf.d/目录下面放的是其他一些配置文件（包括远程被监控主机的配置等等）。</p>
+<h2 id="四、举例，实现远程监控">四、举例，实现远程监控</h2><p><strong>被监控主机</strong></p>
+<p><strong>首先</strong>写一个nagios插件：</p>
+<p>要求：</p>
+<ul>
+<li>必须有一个退出值（0,1,2,3，对应四种状态），也就是说，你的shell脚本最后需要执行exit，给出一个返回值，比如exit 0</li>
+</ul>
+<p><img src="./images/1459259695042.jpg" alt="enter description here" title="1459259695042.jpg"></p>
+<ul>
+<li>插件的执行结果打印到标准输出</li>
+</ul>
+<p>在nagios server端呈现为<br><img src="./images/1459259832120.jpg" alt="enter description here" title="1459259832120.jpg"></p>
+<p>下面写个简单的插件：</p>
+<pre><code>vim <span class="built_in">test</span>
+</code></pre><p><img src="./images/1459259999420.jpg" alt="enter description here" title="1459259999420.jpg"></p>
+<p>放哪儿都行，假设放在/usr/local/nagios/libexec/目录下</p>
+<p>保存并赋予可执行权限，偷懒，直接<code>chmod 777 test</code></p>
+<p>然后配置/etc/nagios/nrpe.cfg文件，添加如下行</p>
+<p><img src="./images/1459260163277.jpg" alt="enter description here" title="1459260163277.jpg"></p>
+<p>也可以写在/etc/nagios/nrpe_local.cfg里面（<strong>推荐</strong>）</p>
+<p>为了使得远程的nagios server可以访问被监控主机的nrpe服务，还需要配置nrpe.cfg文件的<code>allowed_hosts</code>属性，将远程nagios server的ip加上，以逗号隔开</p>
+<p>最后，启动被监控主机的nagios-nrpe-server服务</p>
+<pre><code>service nagios-nrpe-<span class="keyword">server</span> start
+</code></pre><p><img src="./images/1459260353547.jpg" alt="enter description here" title="1459260353547.jpg"></p>
+<p><strong>nagios server端</strong></p>
+<p><strong>配置文件简介</strong></p>
+<p>/etc/nagios3/nagios.cfg文件中的重要属性</p>
+<p><img src="./images/1459260633445.jpg" alt="enter description here" title="1459260633445.jpg"></p>
+<p>log_file:日志文件</p>
+<p>cfg_file:配置文件，每一个需要用到的配置文件都可以写这样一条配置</p>
+<p>cfg_dir:同样可以配置多条，每一条对应一个目录</p>
+<p>nagios3启动会读取所有的cfg_file和cfg_dir中的配置文件</p>
+<p>/etc/nagios3/commands.cfg文件用于存放命令的定义，需要自定义命令的时候，需要编辑这个文件。</p>
+<p><strong>现在开始配置</strong></p>
+<p>首先，在/etc/nagios3/conf.d/目录下添加我们对远程被监控主机的配置</p>
+<p>新建一个文件</p>
+<p>vim seumooc_server.cfg</p>
+<p>写入以下内容</p>
+<p><img src="./images/1459261082844.jpg" alt="enter description here" title="1459261082844.jpg"></p>
+<p><img src="./images/1459261100286.jpg" alt="enter description here" title="1459261100286.jpg"></p>
+<p>以上定义了一台远程主机，以及对于该主机的一个service，该service执行的命令为<code>test</code>(稍后定义，并将其与刚才在远程被监控主机上写的插件test对应起来)</p>
+<p>编辑/etc/nagios3/commands.cfg配置文件，添加以下内容，定义test命令</p>
+<p><img src="./images/1459261278204.jpg" alt="enter description here" title="1459261278204.jpg"></p>
+<p>其中的check_nrpe实际上是一个插件（安装nagios-plugins的时候装了很多插件，check_nrpe是其中非常重要的一个，用于支持远程主机的监控），-c test就是我们远程主机的test</p>
+<p>OK，配置完毕！</p>
+<p>现在，启动apache2和nagios3，在web界面就可以看到效果了</p>
+<p><img src="./images/1459261493933.jpg" alt="enter description here" title="1459261493933.jpg"></p>
+<p>参考链接：<a href="http://tecadmin.net/monitor-remote-linux-host-using-nagios/" target="_blank" rel="external">http://tecadmin.net/monitor-remote-linux-host-using-nagios/</a></p>
+<h2 id="五、nagios远程监控模型">五、nagios远程监控模型</h2><p><img src="./images/1459261549736.jpg" alt="enter description here" title="1459261549736.jpg"></p>
+<h2 id="六、感受">六、感受</h2><p>nagios插件式的架构十分灵活，其插件实际上就是一些可执行文件，其本身也可以单独执行。</p>
+<p>灵活的同时，也意味着配置的复杂性，个人感觉nagios的配置使相当复杂的，看/etc/nagios3/下面的配置文件数量就知道了。</p>
+<p>上面所讲的只是一个简单的例子，进一步学习还要借助官方文档以及google。官方文档写的不是很好。</p>
+<p>另外，有一个开源的python项目将nagios为监控到的信息做了restful api，链接在此：<a href="http://qq.is/nagios-api/2011/10/27/using-the-nagios-api.html" target="_blank" rel="external">http://qq.is/nagios-api/2011/10/27/using-the-nagios-api.html</a></p>
+<p><strong>注：由于本文是在笔者做完上述实验以后写的，可能其间遇到的一些小问题被忽略了。</strong></p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2015/12/01/Github-Pages-Hexo-Markdown-搭建静态博客/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Pengcheng Zhou's Blog 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
